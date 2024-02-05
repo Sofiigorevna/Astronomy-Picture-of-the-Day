@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C5490C02B71137A0040F574 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5490BF2B71137A0040F574 /* TabBarController.swift */; };
+		7C5490C22B7115A20040F574 /* MediaLibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5490C12B7115A20040F574 /* MediaLibraryController.swift */; };
+		7C5490C42B7115B50040F574 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5490C32B7115B50040F574 /* SearchViewController.swift */; };
 		7C6E161A2B71095E004610D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6E16192B71095E004610D9 /* AppDelegate.swift */; };
 		7C6E161C2B71095E004610D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6E161B2B71095E004610D9 /* SceneDelegate.swift */; };
 		7C6E161E2B71095E004610D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6E161D2B71095E004610D9 /* ViewController.swift */; };
-		7C6E16212B71095E004610D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6E161F2B71095E004610D9 /* Main.storyboard */; };
 		7C6E16232B71095F004610D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6E16222B71095F004610D9 /* Assets.xcassets */; };
 		7C6E16262B71095F004610D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6E16242B71095F004610D9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C5490BF2B71137A0040F574 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		7C5490C12B7115A20040F574 /* MediaLibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryController.swift; sourceTree = "<group>"; };
+		7C5490C32B7115B50040F574 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		7C6E16162B71095E004610D9 /* Astronomy Picture of the Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astronomy Picture of the Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6E16192B71095E004610D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C6E161B2B71095E004610D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7C6E161D2B71095E004610D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7C6E16202B71095E004610D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C6E16222B71095F004610D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C6E16252B71095F004610D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C6E16272B71095F004610D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +41,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C5490BC2B71122C0040F574 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7C5490BE2B71128F0040F574 /* App */,
+				7C5490BF2B71137A0040F574 /* TabBarController.swift */,
+				7C6E161D2B71095E004610D9 /* ViewController.swift */,
+				7C5490C12B7115A20040F574 /* MediaLibraryController.swift */,
+				7C5490C32B7115B50040F574 /* SearchViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7C5490BD2B71124F0040F574 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C6E16222B71095F004610D9 /* Assets.xcassets */,
+				7C6E16242B71095F004610D9 /* LaunchScreen.storyboard */,
+				7C6E16272B71095F004610D9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C5490BE2B71128F0040F574 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7C6E16192B71095E004610D9 /* AppDelegate.swift */,
+				7C6E161B2B71095E004610D9 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		7C6E160D2B71095E004610D9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +91,8 @@
 		7C6E16182B71095E004610D9 /* Astronomy Picture of the Day */ = {
 			isa = PBXGroup;
 			children = (
-				7C6E16192B71095E004610D9 /* AppDelegate.swift */,
-				7C6E161B2B71095E004610D9 /* SceneDelegate.swift */,
-				7C6E161D2B71095E004610D9 /* ViewController.swift */,
-				7C6E161F2B71095E004610D9 /* Main.storyboard */,
-				7C6E16222B71095F004610D9 /* Assets.xcassets */,
-				7C6E16242B71095F004610D9 /* LaunchScreen.storyboard */,
-				7C6E16272B71095F004610D9 /* Info.plist */,
+				7C5490BC2B71122C0040F574 /* Sources */,
+				7C5490BD2B71124F0040F574 /* Resources */,
 			);
 			path = "Astronomy Picture of the Day";
 			sourceTree = "<group>";
@@ -127,7 +157,6 @@
 			files = (
 				7C6E16262B71095F004610D9 /* LaunchScreen.storyboard in Resources */,
 				7C6E16232B71095F004610D9 /* Assets.xcassets in Resources */,
-				7C6E16212B71095E004610D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5490C42B7115B50040F574 /* SearchViewController.swift in Sources */,
 				7C6E161E2B71095E004610D9 /* ViewController.swift in Sources */,
+				7C5490C02B71137A0040F574 /* TabBarController.swift in Sources */,
+				7C5490C22B7115A20040F574 /* MediaLibraryController.swift in Sources */,
 				7C6E161A2B71095E004610D9 /* AppDelegate.swift in Sources */,
 				7C6E161C2B71095E004610D9 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7C6E161F2B71095E004610D9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C6E16202B71095E004610D9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7C6E16242B71095F004610D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,12 +313,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HH9D8WXQ67;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Astronomy Picture of the Day/Info.plist";
+				INFOPLIST_FILE = "Astronomy Picture of the Day/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +325,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.sonyigorevna.Astronomy-Picture-of-the-Day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +343,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HH9D8WXQ67;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Astronomy Picture of the Day/Info.plist";
+				INFOPLIST_FILE = "Astronomy Picture of the Day/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +355,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.sonyigorevna.Astronomy-Picture-of-the-Day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
