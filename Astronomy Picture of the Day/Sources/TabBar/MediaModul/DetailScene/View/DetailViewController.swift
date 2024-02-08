@@ -15,7 +15,7 @@ class DetailViewController: UIViewController, DetailViewProtocol {
     private let imageManager = ImageManager.shared
     let globalQueue =  DispatchQueue.global(qos: .utility)
     var presenter: DetailPresenterType?
-
+    
     // MARK: - Outlets
     
     private lazy var contentView: UIView = {
@@ -149,7 +149,7 @@ class DetailViewController: UIViewController, DetailViewProtocol {
     }
     
     // MARK: - Configuration
-
+    
     func configuration(model: PictureData?) {
         self.titlePicture.text = model?.title
         self.explanation.text = model?.explanation
@@ -167,9 +167,9 @@ class DetailViewController: UIViewController, DetailViewProtocol {
     private func prepareNavBar() {
         let navigationBarAppearance = UINavigationBarAppearance()
         navigationBarAppearance.configureWithTransparentBackground()
-
-        navigationController?.navigationBar.tintColor = .black
-
+        
+        navigationController?.navigationBar.tintColor = .systemBackground
+        
         navigationItem.scrollEdgeAppearance = navigationBarAppearance
         navigationItem.standardAppearance = navigationBarAppearance
         navigationItem.compactAppearance = navigationBarAppearance
