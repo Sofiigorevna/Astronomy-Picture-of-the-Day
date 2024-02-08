@@ -52,7 +52,7 @@ class MediaLibraryController: UIViewController {
     private func setupNavBar() {
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
-        backButton.tintColor = .systemBackground
+        backButton.tintColor = .white
         self.navigationItem.backBarButtonItem = backButton
         navigationItem.title = "Astronomy Picture of the Day"
     }

@@ -70,7 +70,7 @@ class SearchViewController: UIViewController {
     private func setupNavBar() {
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
-        backButton.tintColor = .systemGray3
+        backButton.tintColor = .white
         self.navigationItem.backBarButtonItem = backButton
         
         navigationItem.title = "Astronomy Picture of the Day"
