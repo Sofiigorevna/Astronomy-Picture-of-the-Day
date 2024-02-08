@@ -54,7 +54,6 @@ class CustomHeader: UICollectionReusableView {
         fatalError("Error in Cell")
     }
     
-
     // MARK: - Setup
     
     private func setupHierarchy() {

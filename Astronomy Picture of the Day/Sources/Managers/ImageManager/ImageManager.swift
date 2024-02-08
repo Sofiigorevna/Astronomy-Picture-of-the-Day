@@ -36,7 +36,7 @@ final class ImageManager {
         if let placeholderContentMode = placeholderContentMode {
             imageView.contentMode = placeholderContentMode
         }
-
+        
         guard let url = URL(string: url) else {
             return
         }
@@ -47,7 +47,7 @@ final class ImageManager {
             }
         }
     }
-    
+        
     func setImage(with url: String,
                   imageView: UIImageView,
                   placeholder: UIImage? = nil,

@@ -9,17 +9,18 @@ import Foundation
 import Alamofire
 
 protocol NetworkServiceProtocol {
-    func fetchAPIData(handler: @escaping (([PictureData]) -> Void))
+    func fetchAPIData(
+        handler: @escaping (([PictureData]) -> Void))
     func fetchRandomLimitData(
         handler: @escaping (([PictureData]) -> Void)
     )
-   func fetchDataToDay(
+    func fetchDataToDay(
         handler: @escaping ((PictureData) -> Void)
     )
 }
 
 fileprivate enum RequestParameter: Int,
-                       CaseIterable {
+                                   CaseIterable {
     case limit = 20
 }
 
@@ -45,11 +46,11 @@ class NetworkManager: NetworkServiceProtocol {
         let urlPath = "/planetary/apod"
         let queryItem = [URLQueryItem(name: "api_key", value: "kFxHTgfnKwf952EJVActPDNxE141bba43TMcLKiF"),
                          URLQueryItem(name: "start_date", value: "2024-01-01"),
-                         URLQueryItem(name: "end_date", value: "2024-01-31")
+                         URLQueryItem(name: "end_date", value: "2024-01-20")
         ]
-
+        
         let urlRequest = createURL(baseURL: baseURL, path: urlPath, queryItems: queryItem)
-
+        
         guard let url = urlRequest else {return}
         AF.request(
             url,
@@ -115,7 +116,7 @@ class NetworkManager: NetworkServiceProtocol {
                 print(error.localizedDescription)
             }
         }
-
+        
     }
     
     func fetchDataToDay(
@@ -136,7 +137,7 @@ class NetworkManager: NetworkServiceProtocol {
         
         guard let url = urlRequest else {
             return
-        }        
+        }
         AF.request(
             url,
             method: .get,
@@ -159,6 +160,6 @@ class NetworkManager: NetworkServiceProtocol {
                 print(error.localizedDescription)
             }
         }
-
+        
     }
 }

@@ -12,7 +12,7 @@ protocol MainPresenterType {
     var pictureToDay: [PictureData] {get}
     func fetchAll()
     func prepareNewData()
-    func getPictureToDay() 
+    func getPictureToDay()
 }
 
 class MainPresenter: MainPresenterType {
@@ -46,18 +46,18 @@ class MainPresenter: MainPresenterType {
     
     func getPictureToDay() {
         networkService?.fetchDataToDay(
-        handler: { [weak self] apiData in
-            guard self != nil else {
-                return
+            handler: { [weak self] apiData in
+                guard self != nil else {
+                    return
+                }
+                DispatchQueue.main.async {
+                    self?.pictureToDay.append(apiData)
+                    self?.view?.succes()
+                }
             }
-            DispatchQueue.main.async {
-                self?.pictureToDay.append(apiData)
-                self?.view?.succes()
-            }
-        }
-    )
-}
-           
+        )
+    }
+    
     func prepareNewData() {
         networkService?.fetchRandomLimitData(
             handler: { [weak self] apiData in

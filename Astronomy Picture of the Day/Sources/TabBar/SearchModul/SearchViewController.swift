@@ -104,7 +104,6 @@ class SearchViewController: UIViewController {
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
     }
-    
 }
 
 // MARK: - UICollectionViewDelegate

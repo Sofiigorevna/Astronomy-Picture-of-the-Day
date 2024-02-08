@@ -88,8 +88,8 @@ class DetailViewController: UIViewController, DetailViewProtocol {
         stack.alignment = .center
         stack.distribution = .fillProportionally
         stack.setCustomSpacing(1, after: titlePicture)
-        stack.setCustomSpacing(1, after: date)
-        stack.setCustomSpacing(1, after: explanation)
+        stack.setCustomSpacing(10, after: date)
+        stack.setCustomSpacing(10, after: explanation)
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
     }()
@@ -102,7 +102,6 @@ class DetailViewController: UIViewController, DetailViewProtocol {
         setupLayout()
         presenter?.configuration()
         prepareNavBar()
-
     }
     
     override func viewDidLayoutSubviews() {
@@ -131,7 +130,6 @@ class DetailViewController: UIViewController, DetailViewProtocol {
             make.left.right.equalTo(view)
             make.height.equalTo(contentView.snp.width).multipliedBy(0.7)
         }
-        
         
         image.snp.makeConstraints { make in
             make.left.right.equalTo(contentView)

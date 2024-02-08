@@ -14,11 +14,11 @@ class MediaLibraryController: UIViewController {
     var mainPresenter: MainPresenterType?
     
     private let dependencyFactory = DependencyFactory.shared
-
+    
     // MARK: - Outlets
     
     private lazy var collectionView: UICollectionView = {
-        let layout = createLayout()
+        let layout = createCollectionLayout()
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register(PictureCell.self,
@@ -67,61 +67,9 @@ class MediaLibraryController: UIViewController {
         }
     }
     
-    private func createLayout() -> UICollectionViewCompositionalLayout {
-        return UICollectionViewCompositionalLayout { sectionIndex, _ in
-            let spacing: CGFloat = 10
-            
-            let itemSize = NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(0.5),
-                heightDimension: .fractionalHeight(1)
-            )
-            let item = NSCollectionLayoutItem(
-                layoutSize: itemSize
-            )
-            item.contentInsets = .init(
-                top: 4, leading: 4, bottom: 4, trailing: 4
-            )
-
-            let groupSize = NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1),
-                heightDimension: .absolute(160)
-            )
-            let group = NSCollectionLayoutGroup.horizontal(
-                layoutSize: groupSize,
-                subitems: [item]
-            )
-            
-            let layoutSection = NSCollectionLayoutSection(group: group)
-            
-            layoutSection.contentInsets = .init(
-                top: spacing,
-                leading: spacing,
-                bottom: spacing,
-                trailing: spacing)
-            
-            layoutSection.interGroupSpacing = spacing
-            
-            layoutSection.orthogonalScrollingBehavior = .none
-            
-            // Header
-            let layoutSectionHeaderSize = NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1),
-                heightDimension: .fractionalWidth(1.0/2.1)
-            )
-            let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
-                layoutSize: layoutSectionHeaderSize,
-                elementKind: UICollectionView.elementKindSectionHeader,
-                alignment: .top
-            )
-            
-            layoutSectionHeader.contentInsets = .init(
-                top: 0, leading: 4, bottom: 0, trailing: 4
-            )
-            
-            layoutSection.boundarySupplementaryItems = [layoutSectionHeader]
-            
-            return layoutSection
-            
+    private func createCollectionLayout() -> UICollectionViewLayout {
+        return UICollectionViewCompositionalLayout { sectionIndex, _ -> NSCollectionLayoutSection? in
+            return UIHelper.createCollectionLayoutSection()
         }
     }
 }
@@ -135,9 +83,8 @@ extension MediaLibraryController: UICollectionViewDelegate {
         forItemAt indexPath: IndexPath
     ) {
         let lastSection = collectionView.numberOfSections - 1
-        
-        let lastItem = collectionView.numberOfItems(inSection: lastSection) - 15
-        
+        let lastItem = collectionView.numberOfItems(inSection: lastSection) - 11
+
         if indexPath == IndexPath (row: lastItem, section: lastSection) {
             mainPresenter?.prepareNewData()
         }
@@ -191,7 +138,7 @@ extension MediaLibraryController: UICollectionViewDataSource {
                 return
             }
             if let data = self.mainPresenter?.pictureToDay.first {
-
+                
                 let detailVc = self.dependencyFactory.makeDetaillViewController(data: data)
                 self.navigationController?.pushViewController(detailVc, animated: true)
             }
@@ -211,7 +158,6 @@ extension MediaLibraryController: UICollectionViewDataSource {
         }
     }
 }
-
 
 extension MediaLibraryController: MainViewProtocol {
     func succes(){

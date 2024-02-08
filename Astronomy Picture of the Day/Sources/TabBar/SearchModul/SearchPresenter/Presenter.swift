@@ -50,15 +50,6 @@ class SearchPresenter: SearchPresenterType {
             }
         )
     }
-    
-    func updateCollection(_ array: [PictureData]) {
-       
-            DispatchQueue.main.async {
-                self.pictures = array
-                self.view?.succes()
-            }
-        
-    }
 }
 
 
