@@ -18,7 +18,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     func setupTabBarController() {
         delegate = self
         tabBar.backgroundColor = .systemBackground
-        self.tabBar.tintColor = .black
+        self.tabBar.tintColor = .systemGray3
     }
     
     func setupTabBarViewControllers() {

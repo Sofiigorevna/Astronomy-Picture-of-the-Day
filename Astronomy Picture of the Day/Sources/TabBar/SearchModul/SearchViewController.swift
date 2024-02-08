@@ -73,7 +73,7 @@ class SearchViewController: UIViewController {
         backButton.tintColor = .systemBackground
         self.navigationItem.backBarButtonItem = backButton
         
-        title = "Astronomy Picture of the Day"
+        navigationItem.title = "Astronomy Picture of the Day"
     }
     
     private func setupHierarhy() {
@@ -147,6 +147,15 @@ extension SearchViewController: UICollectionViewDataSource {
         
         cell?.configuration(model: filtered[indexPath.row])
         return cell ?? UICollectionViewCell()
+    }
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        didSelectItemAt indexPath: IndexPath
+    ) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+            let detailVc = self.dependencyFactory.makeDetaillViewController(data: filtered[indexPath.row])
+            navigationController?.pushViewController(detailVc, animated: true)
     }
 }
 

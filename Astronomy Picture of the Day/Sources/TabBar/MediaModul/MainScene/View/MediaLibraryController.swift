@@ -54,8 +54,7 @@ class MediaLibraryController: UIViewController {
         backButton.title = "Back"
         backButton.tintColor = .systemBackground
         self.navigationItem.backBarButtonItem = backButton
-    
-        title = "Astronomy Picture of the Day"
+        navigationItem.title = "Astronomy Picture of the Day"
     }
     
     private func setupHierarhy() {
