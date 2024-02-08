@@ -12,12 +12,7 @@ Search pictures by title
 Alamofire, network request with closure, network request with async/await, pagination
 
 ---
-![Screen Shot](https://github.com/Sofiigorevna/Astronomy-Picture-of-the-Day/assets/128394362/335b1f50-f832-435a-a2ae-0e168e4b4904)
-
-
 https://github.com/Sofiigorevna/Astronomy-Picture-of-the-Day/assets/128394362/61954080-9921-45cf-a2bf-ee0c2b3c719b
-
-
 
 https://github.com/Sofiigorevna/Astronomy-Picture-of-the-Day/assets/128394362/30d601e9-66b4-4f80-bc40-258a656c4bed
 
