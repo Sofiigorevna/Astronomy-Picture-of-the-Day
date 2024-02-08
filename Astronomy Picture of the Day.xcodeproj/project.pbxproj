@@ -7,23 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C0F86462B71A50E00076A8E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7C0F86452B71A50E00076A8E /* SnapKit */; };
+		7C0F86482B71C6F300076A8E /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0F86472B71C6F300076A8E /* CustomHeader.swift */; };
+		7C3296232B711BC000265AE1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3296222B711BC000265AE1 /* Model.swift */; };
+		7C3296262B7125E000265AE1 /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3296252B7125E000265AE1 /* PictureCell.swift */; };
+		7C3296282B7127DB00265AE1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3296272B7127DB00265AE1 /* NetworkManager.swift */; };
+		7C32962C2B7128D800265AE1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7C32962B2B7128D800265AE1 /* Alamofire */; };
+		7C5490C02B71137A0040F574 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5490BF2B71137A0040F574 /* TabBarController.swift */; };
+		7C5490C22B7115A20040F574 /* MediaLibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5490C12B7115A20040F574 /* MediaLibraryController.swift */; };
+		7C5490C42B7115B50040F574 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5490C32B7115B50040F574 /* SearchViewController.swift */; };
 		7C6E161A2B71095E004610D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6E16192B71095E004610D9 /* AppDelegate.swift */; };
 		7C6E161C2B71095E004610D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6E161B2B71095E004610D9 /* SceneDelegate.swift */; };
-		7C6E161E2B71095E004610D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6E161D2B71095E004610D9 /* ViewController.swift */; };
-		7C6E16212B71095E004610D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6E161F2B71095E004610D9 /* Main.storyboard */; };
+		7C6E161E2B71095E004610D9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6E161D2B71095E004610D9 /* DetailViewController.swift */; };
 		7C6E16232B71095F004610D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6E16222B71095F004610D9 /* Assets.xcassets */; };
 		7C6E16262B71095F004610D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6E16242B71095F004610D9 /* LaunchScreen.storyboard */; };
+		7CD201702B7450ED00C27D95 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2016F2B7450ED00C27D95 /* ImageManager.swift */; };
+		7CD201742B74517E00C27D95 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD201732B74517E00C27D95 /* SDWebImage */; };
+		7CD201782B74613800C27D95 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD201772B74613800C27D95 /* SearchViewCell.swift */; };
+		7CD2017B2B746D4900C27D95 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2017A2B746D4900C27D95 /* NSObject.swift */; };
+		7CD98E872B72D9E000A1F2C0 /* DependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD98E862B72D9E000A1F2C0 /* DependencyFactory.swift */; };
+		7CD98E8B2B72DAD800A1F2C0 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD98E8A2B72DAD800A1F2C0 /* MainPresenter.swift */; };
+		7CD98E8F2B72DCF400A1F2C0 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD98E8E2B72DCF400A1F2C0 /* DetailPresenter.swift */; };
+		7CD98E992B73FB4D00A1F2C0 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD98E982B73FB4D00A1F2C0 /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C0F86472B71C6F300076A8E /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
+		7C3296222B711BC000265AE1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7C3296252B7125E000265AE1 /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
+		7C3296272B7127DB00265AE1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7C5490BF2B71137A0040F574 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		7C5490C12B7115A20040F574 /* MediaLibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryController.swift; sourceTree = "<group>"; };
+		7C5490C32B7115B50040F574 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		7C6E16162B71095E004610D9 /* Astronomy Picture of the Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astronomy Picture of the Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6E16192B71095E004610D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C6E161B2B71095E004610D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C6E161D2B71095E004610D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7C6E16202B71095E004610D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C6E161D2B71095E004610D9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7C6E16222B71095F004610D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C6E16252B71095F004610D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C6E16272B71095F004610D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CD2016F2B7450ED00C27D95 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		7CD201772B74613800C27D95 /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
+		7CD2017A2B746D4900C27D95 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		7CD98E862B72D9E000A1F2C0 /* DependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyFactory.swift; sourceTree = "<group>"; };
+		7CD98E8A2B72DAD800A1F2C0 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		7CD98E8E2B72DCF400A1F2C0 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		7CD98E982B73FB4D00A1F2C0 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +60,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD201742B74517E00C27D95 /* SDWebImage in Frameworks */,
+				7C32962C2B7128D800265AE1 /* Alamofire in Frameworks */,
+				7C0F86462B71A50E00076A8E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C3296242B711BC600265AE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C3296222B711BC000265AE1 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C3296292B7127E000265AE1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7C3296272B7127DB00265AE1 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7C5490BC2B71122C0040F574 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7CD201792B746D2900C27D95 /* Extensions */,
+				7C5490BE2B71128F0040F574 /* App */,
+				7CD98E882B72D9E600A1F2C0 /* Factory */,
+				7CD98E952B72FE3100A1F2C0 /* TabBar */,
+				7C3296242B711BC600265AE1 /* Models */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7C5490BD2B71124F0040F574 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C6E16222B71095F004610D9 /* Assets.xcassets */,
+				7C6E16242B71095F004610D9 /* LaunchScreen.storyboard */,
+				7C6E16272B71095F004610D9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C5490BE2B71128F0040F574 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7C6E16192B71095E004610D9 /* AppDelegate.swift */,
+				7C6E161B2B71095E004610D9 /* SceneDelegate.swift */,
+				7CD201712B7450F500C27D95 /* Managers */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		7C6E160D2B71095E004610D9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +136,132 @@
 		7C6E16182B71095E004610D9 /* Astronomy Picture of the Day */ = {
 			isa = PBXGroup;
 			children = (
-				7C6E16192B71095E004610D9 /* AppDelegate.swift */,
-				7C6E161B2B71095E004610D9 /* SceneDelegate.swift */,
-				7C6E161D2B71095E004610D9 /* ViewController.swift */,
-				7C6E161F2B71095E004610D9 /* Main.storyboard */,
-				7C6E16222B71095F004610D9 /* Assets.xcassets */,
-				7C6E16242B71095F004610D9 /* LaunchScreen.storyboard */,
-				7C6E16272B71095F004610D9 /* Info.plist */,
+				7C5490BC2B71122C0040F574 /* Sources */,
+				7C5490BD2B71124F0040F574 /* Resources */,
 			);
 			path = "Astronomy Picture of the Day";
+			sourceTree = "<group>";
+		};
+		7CD201712B7450F500C27D95 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7C3296292B7127E000265AE1 /* Networking */,
+				7CD201752B7451AD00C27D95 /* ImageManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7CD201752B7451AD00C27D95 /* ImageManager */ = {
+			isa = PBXGroup;
+			children = (
+				7CD2016F2B7450ED00C27D95 /* ImageManager.swift */,
+			);
+			path = ImageManager;
+			sourceTree = "<group>";
+		};
+		7CD201762B7460E500C27D95 /* SearchPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				7CD98E982B73FB4D00A1F2C0 /* Presenter.swift */,
+			);
+			path = SearchPresenter;
+			sourceTree = "<group>";
+		};
+		7CD201792B746D2900C27D95 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7CD2017A2B746D4900C27D95 /* NSObject.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7CD98E882B72D9E600A1F2C0 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				7CD98E862B72D9E000A1F2C0 /* DependencyFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		7CD98E892B72DAB300A1F2C0 /* MediaModul */ = {
+			isa = PBXGroup;
+			children = (
+				7CD98E8C2B72DCBE00A1F2C0 /* MainScene */,
+				7CD98E8D2B72DCD100A1F2C0 /* DetailScene */,
+			);
+			path = MediaModul;
+			sourceTree = "<group>";
+		};
+		7CD98E8C2B72DCBE00A1F2C0 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				7CD98E902B72FD9600A1F2C0 /* View */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		7CD98E8D2B72DCD100A1F2C0 /* DetailScene */ = {
+			isa = PBXGroup;
+			children = (
+				7CD98E922B72FDA600A1F2C0 /* View */,
+				7CD98E932B72FDAE00A1F2C0 /* Presenter */,
+			);
+			path = DetailScene;
+			sourceTree = "<group>";
+		};
+		7CD98E902B72FD9600A1F2C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C5490C12B7115A20040F574 /* MediaLibraryController.swift */,
+				7C3296252B7125E000265AE1 /* PictureCell.swift */,
+				7C0F86472B71C6F300076A8E /* CustomHeader.swift */,
+				7CD98E912B72FD9C00A1F2C0 /* Presenter */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CD98E912B72FD9C00A1F2C0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7CD98E8A2B72DAD800A1F2C0 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7CD98E922B72FDA600A1F2C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C6E161D2B71095E004610D9 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CD98E932B72FDAE00A1F2C0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7CD98E8E2B72DCF400A1F2C0 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7CD98E942B72FDBF00A1F2C0 /* SearchModul */ = {
+			isa = PBXGroup;
+			children = (
+				7C5490C32B7115B50040F574 /* SearchViewController.swift */,
+				7CD201772B74613800C27D95 /* SearchViewCell.swift */,
+				7CD201762B7460E500C27D95 /* SearchPresenter */,
+			);
+			path = SearchModul;
+			sourceTree = "<group>";
+		};
+		7CD98E952B72FE3100A1F2C0 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7C5490BF2B71137A0040F574 /* TabBarController.swift */,
+				7CD98E892B72DAB300A1F2C0 /* MediaModul */,
+				7CD98E942B72FDBF00A1F2C0 /* SearchModul */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +280,11 @@
 			dependencies = (
 			);
 			name = "Astronomy Picture of the Day";
+			packageProductDependencies = (
+				7C32962B2B7128D800265AE1 /* Alamofire */,
+				7C0F86452B71A50E00076A8E /* SnapKit */,
+				7CD201732B74517E00C27D95 /* SDWebImage */,
+			);
 			productName = "Astronomy Picture of the Day";
 			productReference = 7C6E16162B71095E004610D9 /* Astronomy Picture of the Day.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +313,11 @@
 				Base,
 			);
 			mainGroup = 7C6E160D2B71095E004610D9;
+			packageReferences = (
+				7C32962A2B7128D800265AE1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7C0F86442B71A50E00076A8E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				7CD201722B74517E00C27D95 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 7C6E16172B71095E004610D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +334,6 @@
 			files = (
 				7C6E16262B71095F004610D9 /* LaunchScreen.storyboard in Resources */,
 				7C6E16232B71095F004610D9 /* Assets.xcassets in Resources */,
-				7C6E16212B71095E004610D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +344,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C6E161E2B71095E004610D9 /* ViewController.swift in Sources */,
+				7CD201782B74613800C27D95 /* SearchViewCell.swift in Sources */,
+				7C3296262B7125E000265AE1 /* PictureCell.swift in Sources */,
+				7CD98E872B72D9E000A1F2C0 /* DependencyFactory.swift in Sources */,
+				7C3296232B711BC000265AE1 /* Model.swift in Sources */,
+				7C5490C42B7115B50040F574 /* SearchViewController.swift in Sources */,
+				7C6E161E2B71095E004610D9 /* DetailViewController.swift in Sources */,
+				7CD2017B2B746D4900C27D95 /* NSObject.swift in Sources */,
+				7CD98E8F2B72DCF400A1F2C0 /* DetailPresenter.swift in Sources */,
+				7CD201702B7450ED00C27D95 /* ImageManager.swift in Sources */,
+				7C5490C02B71137A0040F574 /* TabBarController.swift in Sources */,
+				7CD98E8B2B72DAD800A1F2C0 /* MainPresenter.swift in Sources */,
+				7C5490C22B7115A20040F574 /* MediaLibraryController.swift in Sources */,
+				7CD98E992B73FB4D00A1F2C0 /* Presenter.swift in Sources */,
 				7C6E161A2B71095E004610D9 /* AppDelegate.swift in Sources */,
+				7C3296282B7127DB00265AE1 /* NetworkManager.swift in Sources */,
 				7C6E161C2B71095E004610D9 /* SceneDelegate.swift in Sources */,
+				7C0F86482B71C6F300076A8E /* CustomHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7C6E161F2B71095E004610D9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C6E16202B71095E004610D9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7C6E16242B71095F004610D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,12 +501,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HH9D8WXQ67;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Astronomy Picture of the Day/Info.plist";
+				INFOPLIST_FILE = "Astronomy Picture of the Day/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +513,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.sonyigorevna.Astronomy-Picture-of-the-Day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +531,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HH9D8WXQ67;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Astronomy Picture of the Day/Info.plist";
+				INFOPLIST_FILE = "Astronomy Picture of the Day/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +543,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.sonyigorevna.Astronomy-Picture-of-the-Day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +574,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C0F86442B71A50E00076A8E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7C32962A2B7128D800265AE1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		7CD201722B74517E00C27D95 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C0F86452B71A50E00076A8E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C0F86442B71A50E00076A8E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		7C32962B2B7128D800265AE1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C32962A2B7128D800265AE1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		7CD201732B74517E00C27D95 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CD201722B74517E00C27D95 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7C6E160E2B71095E004610D9 /* Project object */;
 }
