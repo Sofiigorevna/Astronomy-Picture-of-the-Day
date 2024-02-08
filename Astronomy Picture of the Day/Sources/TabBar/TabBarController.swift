@@ -22,13 +22,16 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     }
     
     func setupTabBarViewControllers() {
-        let mediaController =  UINavigationController(rootViewController: MediaLibraryController())
+        let mainVC = DependencyFactory().makeInitialViewController()
+        let mediaController =  UINavigationController(rootViewController: mainVC)
         let mediaControllerIcon = UITabBarItem(title: "Picture Library",
-                                     image: UIImage(systemName: "photo.fill.on.rectangle.fill"),
-                                     selectedImage: UIImage(systemName: "photo.fill.on.rectangle.fill"))
+                                     image: UIImage(systemName: "rectangle.stack.fill"),
+                                     selectedImage: UIImage(systemName: "rectangle.stack.fill"))
         mediaController.tabBarItem = mediaControllerIcon
         
-        let searchController = UINavigationController(rootViewController: SearchViewController())
+        let mainSearchVC = DependencyFactory().makeSearchViewController()
+
+        let searchController = UINavigationController(rootViewController: mainSearchVC)
         let searchControllerIcon = UITabBarItem(title: "Search",
                                       image: UIImage(systemName: "magnifyingglass"),
                                       selectedImage: UIImage(systemName: "magnifyingglass"))
