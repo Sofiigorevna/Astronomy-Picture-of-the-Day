@@ -7,7 +7,7 @@
 
 import UIKit
 protocol MainViewProtocol: AnyObject {
-    func succes()
+    func success()
 }
 
 class MediaLibraryController: UIViewController {
@@ -46,7 +46,7 @@ class MediaLibraryController: UIViewController {
     
     private func setupView() {
         mainPresenter?.fetchAll()
-        succes()
+        success()
     }
     
     private func setupNavBar() {
@@ -160,7 +160,7 @@ extension MediaLibraryController: UICollectionViewDataSource {
 }
 
 extension MediaLibraryController: MainViewProtocol {
-    func succes(){
+    func success(){
         self.collectionView.reloadData()
     }
 }

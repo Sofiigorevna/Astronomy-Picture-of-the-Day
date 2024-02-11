@@ -6,16 +6,16 @@
 //
 
 import UIKit
+import Kingfisher
 
 protocol DetailViewProtocol: AnyObject {
     func configuration(model: PictureData?)
 }
 
 class DetailViewController: UIViewController, DetailViewProtocol {
-    private let imageManager = ImageManager.shared
     let globalQueue =  DispatchQueue.global(qos: .utility)
     var presenter: DetailPresenterType?
-    
+
     // MARK: - Outlets
     
     private lazy var contentView: UIView = {
@@ -30,7 +30,7 @@ class DetailViewController: UIViewController, DetailViewProtocol {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    private lazy var scroolView: UIScrollView = {
+    private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.showsVerticalScrollIndicator = true
         scrollView.alwaysBounceVertical = true
@@ -106,27 +106,29 @@ class DetailViewController: UIViewController, DetailViewProtocol {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        scroolView.scrollIndicatorInsets = view.safeAreaInsets
-        scroolView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: view.safeAreaInsets.bottom, right: 0)
+        scrollView.contentInsetAdjustmentBehavior = .never
+        scrollView.scrollIndicatorInsets = view.safeAreaInsets
+        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: view.safeAreaInsets.bottom, right: 0)
     }
     
     // MARK: - Setup
     private func setupHierarhy() {
-        view.addSubview(scroolView)
-        scroolView.addSubview(contentView)
-        scroolView.addSubview(image)
-        scroolView.addSubview(contentViewForStack)
+        view.addSubview(scrollView)
+        scrollView.addSubview(contentView)
+        scrollView.addSubview(image)
+        scrollView.addSubview(contentViewForStack)
         contentViewForStack.addSubview(stack)
     }
     
     private func setupLayout() {
         
-        scroolView.snp.makeConstraints { make in
-            make.right.left.top.bottom.equalTo(view)
+        scrollView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+            make.center.equalToSuperview()
         }
         
         contentView.snp.makeConstraints { make in
-            make.top.equalTo(scroolView)
+            make.top.equalTo(scrollView)
             make.left.right.equalTo(view)
             make.height.equalTo(contentView.snp.width).multipliedBy(0.7)
         }
@@ -138,9 +140,9 @@ class DetailViewController: UIViewController, DetailViewProtocol {
         }
         
         contentViewForStack.snp.makeConstraints { make in
-            make.top.equalTo(image.snp.bottom)
+            make.top.equalTo(contentView.snp.bottom)
             make.left.right.equalTo(view)
-            make.bottom.equalTo(scroolView)
+            make.bottom.equalTo(scrollView)
         }
         
         stack.snp.makeConstraints { make in
@@ -156,11 +158,9 @@ class DetailViewController: UIViewController, DetailViewProtocol {
         self.date.text = model?.date
         
         if let data = model?.url {
-            imageManager.setImage(
-                with: data,
-                imageView: image,
-                placeholder: UIImage(named: "nz")
-            )
+            DownloadImgManager.setImage(
+                with: URL(string: data),
+                imageView: image)
         }
     }
     
@@ -173,6 +173,35 @@ class DetailViewController: UIViewController, DetailViewProtocol {
         navigationItem.scrollEdgeAppearance = navigationBarAppearance
         navigationItem.standardAppearance = navigationBarAppearance
         navigationItem.compactAppearance = navigationBarAppearance
+    }
+    
+    //MARK: — Status Bar Appearance
+    
+    private var shouldHideStatusBar: Bool {
+        let frame = contentViewForStack.convert(contentViewForStack.bounds, to: nil)
+        return frame.minY < view.safeAreaInsets.top
+    }
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return .slide
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return shouldHideStatusBar
+    }
+}
+
+extension DetailViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        var previousStatusBarHidden = false
+        
+        if  previousStatusBarHidden != shouldHideStatusBar {
+            
+            UIView.animate(withDuration: 0.2, animations: {
+                self.setNeedsStatusBarAppearanceUpdate()
+            })
+            previousStatusBarHidden = shouldHideStatusBar
+        }
     }
 }
 

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol MainPresenterType {
     var pictures: [PictureData] {get}
@@ -23,6 +24,11 @@ class MainPresenter: MainPresenterType {
     var pictures = [PictureData]()
     var pictureToDay = [PictureData]()
     
+    lazy var cachedData: NSCache<AnyObject, UIImage> = {
+        let cache = NSCache<AnyObject, UIImage>()
+        return cache
+    }()
+    
     init(view: MainViewProtocol, networkService: NetworkServiceProtocol) {
         self.view = view
         self.networkService = networkService
@@ -33,12 +39,12 @@ class MainPresenter: MainPresenterType {
     func fetchAll() {
         networkService?.fetchAPIData(
             handler: { [weak self] apiData in
-                guard self != nil else {
+                guard let self = self else {
                     return
                 }
                 DispatchQueue.main.async {
-                    self?.pictures = apiData
-                    self?.view?.succes()
+                    self.pictures = apiData
+                    self.view?.success()
                 }
             }
         )
@@ -47,12 +53,12 @@ class MainPresenter: MainPresenterType {
     func getPictureToDay() {
         networkService?.fetchDataToDay(
             handler: { [weak self] apiData in
-                guard self != nil else {
+                guard let self = self else {
                     return
                 }
                 DispatchQueue.main.async {
-                    self?.pictureToDay.append(apiData)
-                    self?.view?.succes()
+                    self.pictureToDay.append(apiData)
+                    self.view?.success()
                 }
             }
         )
@@ -61,12 +67,12 @@ class MainPresenter: MainPresenterType {
     func prepareNewData() {
         networkService?.fetchRandomLimitData(
             handler: { [weak self] apiData in
-                guard self != nil else {
+                guard let self = self else {
                     return
                 }
                 DispatchQueue.main.async {
-                    self?.pictures.append(contentsOf: apiData)
-                    self?.view?.succes()
+                    self.pictures.append(contentsOf: apiData)
+                    self.view?.success()
                 }
             }
         )

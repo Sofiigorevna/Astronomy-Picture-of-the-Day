@@ -7,16 +7,17 @@
 
 import UIKit
 import SnapKit
+import SDWebImage
+import Kingfisher
 
 class PictureCell: UICollectionViewCell {
     static let identifier = "PictureCell"
-    private let imageManager = ImageManager.shared
     
     // MARK: - Outlets
     
     lazy var pictureTitle: UILabel = {
         let label = UILabel()
-        label.font = .boldSystemFont(ofSize: 16)
+        label.font = .boldSystemFont(ofSize: 14)
         label.numberOfLines = 3
         label.textColor = .white
         label.textAlignment = .center
@@ -68,12 +69,10 @@ class PictureCell: UICollectionViewCell {
    
     func configuration(model: PictureData) {
         self.pictureTitle.text = model.title
-        
-        imageManager.setImage(
-            with: model.url,
-            imageView: imageView,
-            placeholder: UIImage(named: "nz")
-        )
+
+        DownloadImgManager.setImage(
+            with: URL(string: model.url),
+            imageView: imageView)
     }
     
     override func prepareForReuse() {

@@ -54,7 +54,7 @@ class SearchViewController: UIViewController {
         }
         filtered = data
         
-        succes()
+        success()
     }
     
     private func setupSearchController() {
@@ -188,7 +188,7 @@ extension SearchViewController: UISearchBarDelegate {
 }
 
 extension SearchViewController: MainViewProtocol {
-    func succes(){
+    func success(){
         self.collectionView.reloadData()
     }
 }

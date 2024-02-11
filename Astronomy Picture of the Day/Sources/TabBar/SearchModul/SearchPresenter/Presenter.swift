@@ -32,7 +32,7 @@ class SearchPresenter: SearchPresenterType {
             guard self != nil else {return}
             DispatchQueue.main.async {
                 self?.pictures = apiData
-                self?.view?.succes()
+                self?.view?.success()
             }
         })
     }
@@ -45,7 +45,7 @@ class SearchPresenter: SearchPresenterType {
                 }
                 DispatchQueue.main.async {
                     self?.pictures.append(contentsOf: apiData)
-                    self?.view?.succes()
+                    self?.view?.success()
                 }
             }
         )

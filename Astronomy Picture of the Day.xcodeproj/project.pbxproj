@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7C0F86462B71A50E00076A8E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7C0F86452B71A50E00076A8E /* SnapKit */; };
 		7C0F86482B71C6F300076A8E /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0F86472B71C6F300076A8E /* CustomHeader.swift */; };
+		7C31DA012B76A493004DD6F1 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7C31DA002B76A493004DD6F1 /* SDWebImage */; };
+		7C31DA032B76AB43004DD6F1 /* KFisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C31DA022B76AB43004DD6F1 /* KFisherManager.swift */; };
 		7C3296232B711BC000265AE1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3296222B711BC000265AE1 /* Model.swift */; };
 		7C3296262B7125E000265AE1 /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3296252B7125E000265AE1 /* PictureCell.swift */; };
 		7C3296282B7127DB00265AE1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3296272B7127DB00265AE1 /* NetworkManager.swift */; };
@@ -22,10 +24,9 @@
 		7C6E16232B71095F004610D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6E16222B71095F004610D9 /* Assets.xcassets */; };
 		7C6E16262B71095F004610D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6E16242B71095F004610D9 /* LaunchScreen.storyboard */; };
 		7CD201702B7450ED00C27D95 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2016F2B7450ED00C27D95 /* ImageManager.swift */; };
-		7CD201742B74517E00C27D95 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD201732B74517E00C27D95 /* SDWebImage */; };
-		7CD201782B74613800C27D95 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD201772B74613800C27D95 /* SearchViewCell.swift */; };
 		7CD2017B2B746D4900C27D95 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2017A2B746D4900C27D95 /* NSObject.swift */; };
 		7CD2017D2B750B3E00C27D95 /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2017C2B750B3E00C27D95 /* CollectionViewLayout.swift */; };
+		7CD201832B756C3900C27D95 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD201822B756C3900C27D95 /* Kingfisher */; };
 		7CD98E872B72D9E000A1F2C0 /* DependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD98E862B72D9E000A1F2C0 /* DependencyFactory.swift */; };
 		7CD98E8B2B72DAD800A1F2C0 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD98E8A2B72DAD800A1F2C0 /* MainPresenter.swift */; };
 		7CD98E8F2B72DCF400A1F2C0 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD98E8E2B72DCF400A1F2C0 /* DetailPresenter.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		7C0F86472B71C6F300076A8E /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
+		7C31DA022B76AB43004DD6F1 /* KFisherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFisherManager.swift; sourceTree = "<group>"; };
 		7C3296222B711BC000265AE1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7C3296252B7125E000265AE1 /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
 		7C3296272B7127DB00265AE1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -48,7 +50,6 @@
 		7C6E16252B71095F004610D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C6E16272B71095F004610D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CD2016F2B7450ED00C27D95 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
-		7CD201772B74613800C27D95 /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
 		7CD2017A2B746D4900C27D95 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		7CD2017C2B750B3E00C27D95 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
 		7CD98E862B72D9E000A1F2C0 /* DependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyFactory.swift; sourceTree = "<group>"; };
@@ -62,8 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CD201742B74517E00C27D95 /* SDWebImage in Frameworks */,
+				7CD201832B756C3900C27D95 /* Kingfisher in Frameworks */,
 				7C32962C2B7128D800265AE1 /* Alamofire in Frameworks */,
+				7C31DA012B76A493004DD6F1 /* SDWebImage in Frameworks */,
 				7C0F86462B71A50E00076A8E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				7CD2016F2B7450ED00C27D95 /* ImageManager.swift */,
+				7C31DA022B76AB43004DD6F1 /* KFisherManager.swift */,
 			);
 			path = ImageManager;
 			sourceTree = "<group>";
@@ -275,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				7C5490C32B7115B50040F574 /* SearchViewController.swift */,
-				7CD201772B74613800C27D95 /* SearchViewCell.swift */,
 				7CD201762B7460E500C27D95 /* SearchPresenter */,
 			);
 			path = SearchModul;
@@ -310,7 +312,8 @@
 			packageProductDependencies = (
 				7C32962B2B7128D800265AE1 /* Alamofire */,
 				7C0F86452B71A50E00076A8E /* SnapKit */,
-				7CD201732B74517E00C27D95 /* SDWebImage */,
+				7CD201822B756C3900C27D95 /* Kingfisher */,
+				7C31DA002B76A493004DD6F1 /* SDWebImage */,
 			);
 			productName = "Astronomy Picture of the Day";
 			productReference = 7C6E16162B71095E004610D9 /* Astronomy Picture of the Day.app */;
@@ -343,7 +346,8 @@
 			packageReferences = (
 				7C32962A2B7128D800265AE1 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				7C0F86442B71A50E00076A8E /* XCRemoteSwiftPackageReference "SnapKit" */,
-				7CD201722B74517E00C27D95 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				7CD201812B756C3900C27D95 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				7C31D9FF2B76A493004DD6F1 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 7C6E16172B71095E004610D9 /* Products */;
 			projectDirPath = "";
@@ -371,7 +375,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CD201782B74613800C27D95 /* SearchViewCell.swift in Sources */,
 				7C3296262B7125E000265AE1 /* PictureCell.swift in Sources */,
 				7CD98E872B72D9E000A1F2C0 /* DependencyFactory.swift in Sources */,
 				7C3296232B711BC000265AE1 /* Model.swift in Sources */,
@@ -388,6 +391,7 @@
 				7C6E161A2B71095E004610D9 /* AppDelegate.swift in Sources */,
 				7C3296282B7127DB00265AE1 /* NetworkManager.swift in Sources */,
 				7C6E161C2B71095E004610D9 /* SceneDelegate.swift in Sources */,
+				7C31DA032B76AB43004DD6F1 /* KFisherManager.swift in Sources */,
 				7C0F86482B71C6F300076A8E /* CustomHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,6 +616,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		7C31D9FF2B76A493004DD6F1 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		7C32962A2B7128D800265AE1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -620,12 +632,12 @@
 				kind = branch;
 			};
 		};
-		7CD201722B74517E00C27D95 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+		7CD201812B756C3900C27D95 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				minimumVersion = 7.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -636,15 +648,20 @@
 			package = 7C0F86442B71A50E00076A8E /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
+		7C31DA002B76A493004DD6F1 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C31D9FF2B76A493004DD6F1 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		7C32962B2B7128D800265AE1 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7C32962A2B7128D800265AE1 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		7CD201732B74517E00C27D95 /* SDWebImage */ = {
+		7CD201822B756C3900C27D95 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7CD201722B74517E00C27D95 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
+			package = 7CD201812B756C3900C27D95 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

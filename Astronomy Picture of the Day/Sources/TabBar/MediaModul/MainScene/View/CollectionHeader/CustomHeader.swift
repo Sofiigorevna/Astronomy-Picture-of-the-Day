@@ -17,9 +17,7 @@ class CustomHeader: UICollectionReusableView {
     var presenter: MainPresenterType?
     
     static let identifier = "CustomHeader"
-    
-    private let imageManager = ImageManager.shared
-    
+        
     // MARK: - Outlets
     
     private lazy var headerImageButton: UIButton = {
@@ -31,7 +29,7 @@ class CustomHeader: UICollectionReusableView {
         button.addTarget(self, action: #selector(buttonTapped),for: .touchUpInside)
         return button
     }()
-    
+        
     lazy var pictureTitle: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 16)
@@ -80,7 +78,6 @@ class CustomHeader: UICollectionReusableView {
     
     func configuration(model: PictureData) {
         self.pictureTitle.text = model.title
-
         if let imageURL = URL(string: model.url){
 
             globalQueue.async {
@@ -96,7 +93,6 @@ class CustomHeader: UICollectionReusableView {
             self.headerImageButton.setImage(image, for: .normal)
             return
         }
-        
     }
     
     override func prepareForReuse() {
